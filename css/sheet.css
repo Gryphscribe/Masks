@@ -145,6 +145,12 @@
 		font-style: italic;
 	}
 
+	textarea.description {
+		width: 50%;
+		height: 65px;
+		resize: horizontal;
+	}
+
 .striketoggle {
 	z-index: 10;
 }
