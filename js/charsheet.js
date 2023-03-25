@@ -125,6 +125,10 @@ function displayButtons() {
 	$( "#charSheet" ).after( "<div class='charSheetButtons' style='text-align: center;''><button type='button' value='Save'  onclick='putCharstuff();' style='margin: 0 auto;'>Save</button> <button type='button' value='Load' onclick='loadCharstuff();' style='margin: 0 auto;'>Load</button> <button type='button' value='Clear' onclick='clearForm()'>Clear</button></div>" );
 }
 
+function displayCredits() {
+    $( ".charSheetButtons" ).after( "<div class='credits'>Masks RPG Character Sheet - Save and Bookmark to store your character. <br>originally created by <a href='https://joefulgham.com/'>Joe Fulgham</a> / <a href='https://adventureforhire.com/'>Adventure For Hire</a><br>modified by <a href='https://github.com/GryphonM'>Gryphon M.</a> | <a href='https://nophyrg.itch.io/'>Play my Games!</a> | Reach out on Discord: Nophyrg#4556<br>Joe Fulgham Sites:<br>Twitter: <a href='https://twitter.com/joefulgham/'>@joefulgham</a> | Facebook: <a href='https://www.facebook.com/joefulgham/'>/joefulgham</a> | Twitch: <a href='https://www.twitch.tv/joefulgham/'>joefulgham</a> | PayPal: <a href='https://paypal.me/joefulgham'>joefulgham</a> | <a href='https://ko-fi.com/joefulgham/'>Buy me a coffee</a><br>Get <a href='https://www.magpiegames.com/masks/'>Masks RPG here</a>!</div>" )
+}
+
 function changePortrait() {
 	var newPortrait = $("#charPortraitURI").val();
 	var charPortraitinput = $("input#charPortraitURI");
@@ -144,6 +148,8 @@ function initialStuff() {
     resizeBoxes();
     // Show load/save buttons at the end of the form
     displayButtons();
+    // Show credits at end of page
+    displayCredits();
     //	Run sheet-specific post-load scripts 
     if (typeof charLoaded == 'function') {
             charLoaded(); 
