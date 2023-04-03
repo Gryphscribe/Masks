@@ -111,12 +111,22 @@
 		<div>
 			<h2>Labels</h2>
 			<p>(at character creation, add +1 wherever you choose)</p>
-			<div class="labels" style="max-width: 10em;">
-				<p>Danger <input type="number" name="charDanger" min="-2" max="3" value="0" class="alignRight"></p>
-				<p>Freak <input type="number" name="charFreak" min="-2" max="3" value="0" class="alignRight"></p>
-				<p>Savior <input type="number" name="charSavior" min="-2" max="3" value="-1" class="alignRight"></p>
-				<p>Superior <input type="number" name="charSuperior" min="-2" max="3" value="2" class="alignRight"></p>
-				<p>Mundane <input type="number" name="charMundane" min="-2" max="3" value="1" class="alignRight"></p>
+			<div class="labels" style="max-width: 15em;">
+				<p>Danger <label class="alignRight" style="margin-left: .25em;">Locked</label>
+					<input type="checkbox" name="lockDanger" class="alignRight">
+					<input type="number" name="charDanger" min="-2" max="3" value="0" class="alignRight" style="margin-right: 1em;"></p>
+				<p>Freak <label class="alignRight" style="margin-left: .25em;">Locked</label>
+					<input type="checkbox" name="lockDanger" class="alignRight">
+					<input type="number" name="charFreak" min="-2" max="3" value="0" class="alignRight" style="margin-right: 1em;"></p>
+				<p>Savior <label class="alignRight" style="margin-left: .25em;">Locked</label>
+					<input type="checkbox" name="lockDanger" class="alignRight">
+					<input type="number" name="charSavior" min="-2" max="3" value="-1" class="alignRight" style="margin-right: 1em;"></p>
+				<p>Superior <label class="alignRight" style="margin-left: .25em;">Locked</label>
+					<input type="checkbox" name="lockDanger" class="alignRight">
+					<input type="number" name="charSuperior" min="-2" max="3" value="2" class="alignRight" style="margin-right: 1em;"></p>
+				<p>Mundane <label class="alignRight" style="margin-left: .25em;">Locked</label>
+					<input type="checkbox" name="lockDanger" class="alignRight">
+					<input type="number" name="charMundane" min="-2" max="3" value="1" class="alignRight" style="margin-right: 1em;"></p>
 			</div>
 		</div>
 
