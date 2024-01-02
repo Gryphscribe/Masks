@@ -1,3 +1,8 @@
+	:root {
+		--main-color: #4a7284;
+		--bold-color: #9a3b3f;
+	}
+	
 	body {
   		font-family: 'Open Sans', sans-serif;
   		font-size: 16px;
@@ -17,7 +22,7 @@
 		text-align: center;
 	}
 	h1, h2, h3 {
-		color: #4a7284;
+		color: var(--main-color);
 		font-weight: 800;
 		text-transform: uppercase;
 	}
@@ -27,8 +32,8 @@
 		padding-left: 12px;
 		padding-top: 6px;
 		font-style: italic;
-		border-left: 6px solid  #4a7284;
-		border-top: 2px solid  #4a7284;
+		border-left: 6px solid  var(--main-color);
+		border-top: 2px solid  var(--main-color);
 	}
 
 	.logo {
@@ -58,7 +63,7 @@
 	}
 
 	.statBox h2, .infoBox h2 {
-		background:#000;
+		background:black;
 		color:white;
 		padding:10px;
 		text-align: left;
@@ -137,7 +142,7 @@
 	}
 
 	#section b {
-		color: #9a3b3f;
+		color: var(--bold-color);
 	}
 
 	#section #emphasis {
